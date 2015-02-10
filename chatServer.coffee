@@ -1,6 +1,8 @@
-app = require 'express'
-http = require 'http'
-server = http.createServer app
+# sapp = require 'express'
+express = require 'express'
+app = express.createServer()
+# http = require 'http'
+# server = http.createServer app
 # io = require('socket.io').listent(server)
 
 io  = require 'socket.io'
