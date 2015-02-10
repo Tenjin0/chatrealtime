@@ -1,4 +1,3 @@
-#
 app = require 'express'
 http = require 'http'
 server = http.createServer app
