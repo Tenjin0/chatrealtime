@@ -4,6 +4,7 @@
   "description": "example of realtime chat",
   "main": "chatServer.js",
   "scripts": {
+    "start": "node chatServer.js",
     "test": "echo NIY && exit 1"
   },
   "author": "Tenji",

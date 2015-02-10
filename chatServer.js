@@ -1,6 +1,5 @@
 var app = require('express')(),
     server = require('http').createServer(app),
-    io = require('socket.io').listen(server),
     ent = require('ent'), // Permet de bloquer les caractères HTML (sécurité équivalente à htmlentities en PHP)
     fs = require('fs');
 
@@ -14,7 +13,7 @@ app.get('/', function (req, res) {
 });
 
 io.sockets.on('connection', function (socket) {
-	
+
 	socket.emit('news', { hello: 'world' });
 
 	socket.on('disconnect', function() {
@@ -34,4 +33,4 @@ io.sockets.on('connection', function (socket) {
 	});
 });
 
-server.listen(8080);
+server.listen(8081);
